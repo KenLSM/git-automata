@@ -1,6 +1,12 @@
 {
+  "scripts": {
+    "dev": "yarn stop && pm2 start index.js --watch && pm2 logs",
+    "stop": "pm2 stop all"
+  },
   "dependencies": {
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1"
-  }
+    "jsonwebtoken": "^8.5.1",
+    "pm2": "^4.1.2"
+  },
+  "devDependencies": {}
 }
