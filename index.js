@@ -20,12 +20,12 @@ const verifyWebhookSignature = (req, res, next) => {
   next();
 };
 
-app.post("*", verifyWebhookSignature);
+app.post("/{*path}", verifyWebhookSignature);
 app.post("/event_handler", (req, res) => {
   res.body("ok");
 });
 
-app.get((req, res) => {
+app.get("/", (req, res) => {
   return res.send("ok");
 });
 

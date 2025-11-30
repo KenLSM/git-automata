@@ -4,9 +4,9 @@
     "stop": "pm2 stop all"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "jsonwebtoken": "^9.0.0",
-    "pm2": "^4.1.2"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pm2": "^6.0.14"
   },
   "devDependencies": {}
 }
